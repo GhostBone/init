@@ -48,6 +48,7 @@ X11Forwarding no \n\
 PrintMotd yes \n\
 PrintLastLog yes \n\
 KeepAlive yes \n" | sudo tee /etc/ssh/sshd_config.d/01-personal-config.conf;
+sudo systemctl restart sshd.service;
 
 echo -e "\033[32m*configuring the system timezone to Asia/Shanghai....\033[0m";
 sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime;

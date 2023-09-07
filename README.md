@@ -32,6 +32,7 @@ git config --global core.autocrlf input;
 git config --global core.safecrlf true;
 git config --global core.ignorecase true
 git config --global core.editor vim;
+sudo systemctl restart sshd.service;
 ```
 
 
